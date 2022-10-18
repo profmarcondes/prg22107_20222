@@ -19,7 +19,6 @@ class HelloQT : public QWidget
         QPushButton * _button;
         QHBoxLayout * _hLayout;
         QVBoxLayout * _vLayout;
-
 };
 
 #endif // HELLOQT_H

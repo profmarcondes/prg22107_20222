@@ -16,13 +16,10 @@ HelloQT::HelloQT(QApplication * app, QWidget *parent)
     _spin->setValue(35);
 
     _label = new QLabel("<h2><i>Hello</i> <font color=red>QT!</font></h2>");
-    //_label->show();
 
-    _button = new QPushButton("Quit");
+    _button = new QPushButton("&Quit");
     QObject::connect(_button, SIGNAL(clicked()),
                      app, SLOT(quit()));
-
-    //btn->show();
 
     _hLayout = new QHBoxLayout;
     _hLayout->addWidget(_label);
@@ -35,3 +32,4 @@ HelloQT::HelloQT(QApplication * app, QWidget *parent)
 
     setLayout(_vLayout);
 }
+
